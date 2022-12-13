@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Karma pride",
+  "version": "0.1",
+  "description": "Нововведения на хабре позволяют смотреть данные о плюсах и минусах. Вот я и накатал расширение для просмотра статистики.",
+  "icons": {
+    "128": "karma-pride.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://habr.com/ru/users/*" ],
+      "js": [ "app.js" ]
+    }
+  ]
+}
